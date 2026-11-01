@@ -16,8 +16,8 @@
 
 const plantilla = {
   id: 'tema-plantilla', // único en toda la app
-  title: 'Tema 4: Título de la lección', // "Tema N: Título" se muestra como etiqueta + título
-  image: 'img/tema-1.svg', // ruta en public/img/ o URL
+  title: 'Tema ejemplo: Título de la lección', // "Tema N: Título" se muestra como etiqueta + título
+  image: 'img/tema-ejemplo.svg', // ruta en public/img/ o URL
   keywords: ['palabra', 'clave'], // para el buscador de la portada
 
   blocks: [

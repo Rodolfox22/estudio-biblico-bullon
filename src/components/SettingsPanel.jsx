@@ -4,13 +4,57 @@ import { useToast } from '../context/ToastContext.jsx'
 import { lessons } from '../data/lessons.js'
 import { DEFAULT_TRANSLATION, prefetchLessons } from '../lib/bible.js'
 import { useInstallPrompt } from '../lib/hooks.js'
-import { CloseIcon, DownloadIcon } from './Icons.jsx'
+import { KEYS } from '../lib/storage.js'
+import { CloseIcon, DownloadIcon, TrashIcon } from './Icons.jsx'
+
+const STORAGE_PREFIX = 'bible_study_'
+// Cachés de datos que crea el service worker (los de la app misma se conservan al borrar solo la caché)
+const DATA_CACHES = ['bible-api', 'lesson-images']
+
+/** Borra versículos guardados (localStorage) y las cachés de datos del navegador. Conserva respuestas, favoritos y ajustes. */
+async function clearCacheOnly() {
+  localStorage.removeItem(KEYS.verseCache)
+  if ('caches' in window) {
+    await Promise.all(DATA_CACHES.map((name) => caches.delete(name)))
+  }
+}
+
+/** Borra TODO: respuestas, decisiones, favoritos, ajustes, versículos, cachés y service worker. */
+async function clearEverything() {
+  Object.keys(localStorage)
+    .filter((k) => k.startsWith(STORAGE_PREFIX))
+    .forEach((k) => localStorage.removeItem(k))
+
+  if ('caches' in window) {
+    const names = await caches.keys()
+    await Promise.all(names.map((n) => caches.delete(n)))
+  }
+  if ('serviceWorker' in navigator) {
+    const regs = await navigator.serviceWorker.getRegistrations()
+    await Promise.all(regs.map((r) => r.unregister()))
+  }
+}
+
+const CONFIRM_TEXT = {
+  cache: {
+    title: '¿Borrar la caché?',
+    body: 'Se eliminarán los versículos descargados y las imágenes guardadas. Tus respuestas, decisiones, favoritos y ajustes se conservan. Los versículos se volverán a descargar al abrirlos con conexión. La app se recargará.',
+    action: 'Sí, borrar caché'
+  },
+  all: {
+    title: '¿Borrar todos los datos?',
+    body: 'Se eliminarán de forma permanente tus respuestas, decisiones, favoritos, ajustes, versículos descargados y la caché. Esta acción no se puede deshacer. La app se recargará y necesitarás conexión a internet para volver a abrirla.',
+    action: 'Sí, borrar todo'
+  }
+}
 
 export default function SettingsPanel({ onClose }) {
   const { settings, update, translations } = useSettings()
   const toast = useToast()
   const { canInstall, install } = useInstallPrompt()
   const [progress, setProgress] = useState(null)
+  const [confirm, setConfirm] = useState(null) // null | 'cache' | 'all'
+  const [clearing, setClearing] = useState(false)
 
   useEffect(() => {
     const onKey = (e) => e.key === 'Escape' && onClose()
@@ -27,6 +71,21 @@ export default function SettingsPanel({ onClose }) {
         ? `Se descargaron ${result.total - result.failed} de ${result.total} citas. Revisa tu conexión y reintenta.`
         : 'Listo: los versículos de las lecciones están disponibles sin conexión.'
     )
+  }
+
+  const runClear = async () => {
+    if (!confirm) return
+    setClearing(true)
+    try {
+      if (confirm === 'all') await clearEverything()
+      else await clearCacheOnly()
+      window.location.hash = '#/'
+      window.location.reload()
+    } catch {
+      setClearing(false)
+      setConfirm(null)
+      toast('No se pudo borrar. Cierra otras pestañas de la app e inténtalo de nuevo.')
+    }
   }
 
   return (
@@ -118,6 +177,43 @@ export default function SettingsPanel({ onClose }) {
               <button className="btn-primary mt-3 w-full" onClick={install}>
                 Instalar aplicación
               </button>
+            )}
+          </section>
+
+          <section className="border-t border-line pt-6">
+            <p className="mb-1 font-semibold">Datos y almacenamiento</p>
+            <p className="mb-3 text-sm text-muted">
+              Libera espacio o empieza de cero. Tus datos viven solo en este dispositivo.
+            </p>
+
+            <div className="space-y-2">
+              <button className="btn-ghost w-full" onClick={() => setConfirm('cache')} disabled={clearing}>
+                <TrashIcon width={18} height={18} />
+                Borrar caché
+              </button>
+              <button
+                className="btn w-full border border-red-500/50 bg-surface text-red-600 hover:bg-red-500/10 dark:text-red-400"
+                onClick={() => setConfirm('all')}
+                disabled={clearing}
+              >
+                <TrashIcon width={18} height={18} />
+                Borrar todos los datos
+              </button>
+            </div>
+
+            {confirm && (
+              <div role="alert" className="pop-in mt-4 rounded-xl border border-red-500/40 bg-red-500/10 p-4">
+                <p className="font-semibold">{CONFIRM_TEXT[confirm].title}</p>
+                <p className="mt-1 text-sm leading-6">{CONFIRM_TEXT[confirm].body}</p>
+                <div className="mt-3 flex gap-2">
+                  <button className="btn-ghost flex-1" onClick={() => setConfirm(null)} disabled={clearing}>
+                    Cancelar
+                  </button>
+                  <button className="btn flex-1 bg-red-600 text-white hover:bg-red-700" onClick={runClear} disabled={clearing}>
+                    {clearing ? 'Borrando…' : CONFIRM_TEXT[confirm].action}
+                  </button>
+                </div>
+              </div>
             )}
           </section>
         </div>
