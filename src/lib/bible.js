@@ -1,5 +1,6 @@
 import { parseReference } from './reference.js'
 import { KEYS, read, write } from './storage.js'
+import { collectRefs } from './lessonUtils.js'
 
 // API gratuita de AO Lab (sin clave): https://bible.helloao.org
 // Nota: bible-api.com (Tim Morgan) NO incluye ninguna versión en español.
@@ -123,11 +124,7 @@ export function passageToText(passage) {
 
 /** Descarga todos los versículos de las lecciones para usarlos sin conexión. */
 export async function prefetchLessons(lessons, translation, onProgress) {
-  const refs = [
-    ...new Set(
-      lessons.flatMap((l) => [...l.sections.flatMap((s) => s.questions.map((q) => q.bibleRef)), ...l.versesSection])
-    )
-  ]
+  const refs = [...new Set(lessons.flatMap(collectRefs))]
   let done = 0
   let failed = 0
   for (const ref of refs) {

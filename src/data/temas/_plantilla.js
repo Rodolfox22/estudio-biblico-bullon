@@ -1,0 +1,93 @@
+// PLANTILLA DE LECCIÓN POR BLOQUES
+// ---------------------------------------------------------------------------
+// Copia este archivo como src/data/temas/tema-4.js (el "_" del nombre hace que la app lo ignore).
+// Cambia `plantilla` por `tema4`, y ajusta `id`, `title` y los bloques.
+//
+// La lección se dibuja de arriba hacia abajo en el mismo orden de `blocks`.
+// Usa solo los bloques que necesites, en cualquier orden y cantidad.
+//
+// Texto enriquecido (en `content`, `text`, `items`): **negrita** y *cursiva*.
+// Citas: se escriben como en la Biblia: 'Juan 3:16', '1 Juan 4:8', 'Lam. 3:22-23', 'Romanos 8:38,39'.
+// Si una cita no se entiende, la consola (npm run dev) te avisa en qué bloque está.
+//
+// RECUERDA: el `id` de cada pregunta debe ser único y no cambiar después de publicar
+// (con él se guardan las respuestas de la persona).
+// ---------------------------------------------------------------------------
+
+const plantilla = {
+  id: 'tema-plantilla', // único en toda la app
+  title: 'Tema 4: Título de la lección', // "Tema N: Título" se muestra como etiqueta + título
+  image: 'img/tema-1.svg', // ruta en public/img/ o URL
+  keywords: ['palabra', 'clave'], // para el buscador de la portada
+
+  blocks: [
+    // 1) BANNER: caja de color con versículos intermedios y un texto de declaración
+    {
+      type: 'banner',
+      title: 'Para empezar, lee con calma',
+      refs: ['Salmos 23:1-3', 'Isaías 41:10'],
+      text: 'Declaración: *El Señor es mi pastor; nada me faltará.*'
+    },
+
+    // 2) TEXTO: uno o varios párrafos. style: 'normal' | 'lead' (destacado) | 'quote' (cita)
+    {
+      type: 'text',
+      style: 'lead',
+      content: 'Un párrafo de introducción más grande y destacado.'
+    },
+    {
+      type: 'text',
+      title: 'Título opcional del texto',
+      content: [
+        'Primer párrafo con **negrita** y *cursiva*.',
+        'Segundo párrafo. Puedes poner tantos como quieras.'
+      ]
+    },
+    {
+      type: 'text',
+      style: 'quote',
+      content: 'Una frase o cita destacada con barra lateral.',
+      cite: 'Autor o fuente (opcional)'
+    },
+
+    // 3) LISTA con viñetas (o numerada con ordered: true)
+    {
+      type: 'list',
+      ordered: false,
+      items: ['Primer punto', 'Segundo punto con **énfasis**', 'Tercer punto']
+    },
+
+    // 4) SECCIÓN: título con degradado y línea divisoria (agrupa lo que sigue)
+    { type: 'section', title: 'Primera parte de la lección' },
+
+    // 5) PREGUNTA: caja de respuesta con guardado automático.
+    //    Cita única: bibleRef: '...'   |   Varias citas: bibleRefs: ['...', '...']   |   Sin cita: omite ambas
+    { type: 'question', id: 'tp-q1', text: '¿Primera pregunta?', bibleRef: 'Juan 3:16' },
+    { type: 'question', id: 'tp-q2', text: '¿Pregunta con dos citas?', bibleRefs: ['Romanos 8:38', 'Romanos 8:39'] },
+    { type: 'question', id: 'tp-q3', text: '¿Pregunta sin cita bíblica?' },
+
+    // 6) CALLOUT: recuadro suave con una declaración o idea clave (puede llevar citas)
+    {
+      type: 'callout',
+      title: 'Recuerda',
+      text: 'Dios quiere hijos, no esclavos.',
+      refs: ['Gálatas 4:7']
+    },
+
+    // 7) IMAGEN con pie opcional
+    { type: 'image', src: 'img/tema-2.svg', caption: 'Pie de imagen (opcional)' },
+
+    // 8) VERSÍCULOS: lista de citas que abren la ventana; con corazón de favoritos (favorites: false lo quita)
+    { type: 'section', title: 'Versículos para meditar' },
+    { type: 'verses', refs: ['Génesis 3:8-10', 'Jeremías 31:3', 'Efesios 2:4-5'] },
+
+    // 9) DECISIÓN: texto + casilla. Si pones más de una en la lección, dale un `id` distinto a cada una.
+    {
+      type: 'decision',
+      text: 'Antes de continuar, ¿te gustaría agradecer a Dios?',
+      checkboxLabel: 'Sí, quiero agradecer a Dios'
+    }
+  ]
+}
+
+export default plantilla

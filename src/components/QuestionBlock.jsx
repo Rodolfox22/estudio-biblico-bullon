@@ -13,14 +13,18 @@ export default function QuestionBlock({ number, question, value, status, onChang
   }, [value])
 
   return (
-    <div className="py-5">
+    <div className="border-b border-line/60 py-5">
       <p className="font-serif text-[1.05rem] leading-7">
         <span className="mr-2 font-semibold text-accent">{number}.</span>
         {question.text}
       </p>
-      <div className="mt-2">
-        <VerseLink reference={question.bibleRef} />
-      </div>
+      {question.bibleRefs?.length > 0 && (
+        <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1">
+          {question.bibleRefs.map((r) => (
+            <VerseLink key={r} reference={r} />
+          ))}
+        </div>
+      )}
       <div className="relative mt-3">
         <label htmlFor={question.id} className="sr-only">
           Tu respuesta a: {question.text}
