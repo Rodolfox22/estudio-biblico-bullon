@@ -64,13 +64,13 @@ export const BOOKS = [
   ['1JN', '1 Juan', false, ['1 juan', '1 jn','1jn']],
   ['2JN', '2 Juan', true, ['2 juan', '2 jn','2jn']],
   ['3JN', '3 Juan', true, ['3 juan', '3 jn','3jn']],
-  ['JUD', 'Judas', true, ['judas', 'jud']]
+  ['JUD', 'Judas', true, ['judas', 'jud']],
   ['REV', 'Apocalipsis', false, ['apocalipsis', 'apoc', 'ap']]
 ]
 
 const ALIAS_MAP = new Map()
 for (const [id, name, single, aliases] of BOOKS) {
-  for (const a of aliases) ALIAS_MAP.set(a, { id, name, single })
+  for (const a of (aliases || [])) ALIAS_MAP.set(a, { id, name, single })
 }
 
 export const findBook = (alias) => ALIAS_MAP.get(alias) || null

@@ -112,7 +112,7 @@ export default function LessonView({ lessonId }) {
         ))}
 
         <section className="mt-10">
-          <SectionTitle>Versículos para meditar</SectionTitle>
+          <SectionTitle>{lesson.titleVSection}</SectionTitle>
           <ul className="divide-y divide-line">
             {lesson.versesSection.map((ref) => (
               <li key={ref} className="flex items-center justify-between py-3">
