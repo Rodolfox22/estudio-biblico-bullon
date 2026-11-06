@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#1e4fa3" />
+    <meta name="description" content="Estudio bíblico interactivo con lecciones, versículos y comandos de voz." />
+    <link rel="icon" type="image/svg+xml" href="/estudio-biblico/favicon.svg" />
+    <link rel="apple-touch-icon" href="/estudio-biblico/icons/apple-touch-icon.png" />
+    <title>Estudio Bíblico</title>
+    <script>
+      // Aplica tema y tamaño de letra antes de pintar (evita parpadeo)
+      try {
+        var c = JSON.parse(localStorage.getItem('bible_study_config') || '{}')
+        var r = document.documentElement
+        r.dataset.theme = c.theme || 'clasico'
+        if (c.dark) r.classList.add('dark')
+        if (c.fontScale) r.style.setProperty('--fs', c.fontScale)
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="/estudio-biblico/assets/index-COomLrLm.js"></script>
+    <link rel="stylesheet" crossorigin href="/estudio-biblico/assets/index-D2bwTM6V.css">
+  <link rel="manifest" href="/estudio-biblico/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/estudio-biblico/registerSW.js"></script></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

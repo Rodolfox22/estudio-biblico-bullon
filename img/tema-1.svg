@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1e4fa3"/><stop offset="1" stop-color="#60a5fa"/></linearGradient>
+    <radialGradient id="r" cx=".5" cy=".42" r=".6"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#g)"/>
+  <rect width="600" height="400" fill="url(#r)"/>
+  <path d="M300 300c-70-52-104-90-104-132 0-34 25-56 54-56 22 0 40 12 50 30 10-18 28-30 50-30 29 0 54 22 54 56 0 42-34 80-104 132z" fill="#fff" fill-opacity=".9"/>
+</svg>
