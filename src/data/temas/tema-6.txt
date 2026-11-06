@@ -1,0 +1,124 @@
+const tema6 = {
+  id: 'tema-6',
+  title: 'Tema 6: Cómo crecer en la experiencia cristiana',
+  image: 'img/tema-6.svg',
+  keywords: ['crecer', 'experiencia cristiana', 'voluntad', 'Jesús', 'frutos'],
+
+  blocks: [
+    {
+      type: 'text',
+      style: 'lead',
+      content: '¿Sabias que es más fácil volverse cristiano, que permanecer cristiano?'
+    },
+    {
+      type: 'question',
+      id: 't6-q1',
+      text: '1. ¿Qué sucede cuándo vamos a Jesús?',
+      bibleRef: '2 Corintios 5:17'
+    },
+    {
+      type: 'question',
+      id: 't6-q2',
+      text: '2. ¿Cuál es el alimento del cristiano?',
+      bibleRef: 'Mateo 4:4'
+    },
+    {
+      type: 'callout',
+      title: 'REFLEXIÓN',
+      text: 'Una criatura recién nacida, necesita ser alimentada para crecer.'
+    },
+    {
+      type: 'text',
+      style: 'lead',
+      content: 'AHORA PIENSA: ¿El crecimiento en la vida cristiana es el resultado del esfuerzo humano?'
+    },
+    {
+      type: 'text',
+      style: 'quote',
+      content: '"¿Y quién de vosotros podrá por mucho que se afane, añadir a su estatura un codo?"',
+      cite: 'Mateo 6:27'
+    },
+    {
+      type: 'text',
+      style: 'lead',
+      content: 'MEDITA EN ESTO:'
+    },
+    {
+      type: 'text',
+      style: 'quote',
+      content: '"El niño no puede, por su solicitud o poder propio, añadir algo a su estatura. Ni tú podrás, por tu solicitud o esfuerzo, conseguir el crecimiento espiritual"',
+      cite: 'El camino a Cristo, Página 67'
+    },
+    {
+      type: 'text',
+      style: 'quote',
+      content: '"Como la flor se dirige hacia el sol, a fin de que los brillantes rayos la ayuden a perfeccionar su belleza y simetría, así debemos tornarnos hacia el Sol de justicia, a fin de que la luz celestial brille sobre nosotros, para que nuestro carácter se transforme a la imagen de Cristo"',
+      cite: 'El camino a Cristo, Página 68'
+    },
+    {
+      type: 'question',
+      id: 't6-q3',
+      text: '3. ¿Cuál es la responsabilidad humana?',
+      bibleRef: '1 Pedro 2:2'
+    },
+    {
+      type: 'callout',
+      title: '¡DESEAR! ¡QUERER!',
+      text: 'Dios no puede hacer nada contra la voluntad humana, tú solo necesitas alimentarte, crecer es el resultado natural.'
+    },
+    {
+      type: 'text',
+      style: 'quote',
+      content: '"Nuestro crecimiento en la gracia, nuestro gozo, nuestra utilidad, todo depende de nuestra unión con Cristo. Solamente estando en comunión en Él, permaneciendro en Él diariamente, a cada hora, es como hemos de crecer en la gracia. Él no es solamente el autor sino también el consumador de nuestra fe"',
+      cite: 'Y AHORA MIRA (El camino a Cristo, páginas 68,69)'
+    },
+    {
+      type: 'question',
+      id: 't6-q4',
+      text: '4. ¿Cómo sucede esto?',
+      bibleRef: 'Gálatas 2:20'
+    },
+    {
+      type: 'question',
+      id: 't6-q5',
+      text: '5. Las buenas obras de Cristo, ¿eran resultado de qué?',
+      bibleRef: 'Juan 14:10'
+    },
+    {
+      type: 'callout',
+      title: 'COMUNIÓN',
+      text: 'A través de su palabra Jesús se relaciona contigo, y a través de la oración tú te relacionas con Jesús. De esa manera Él vive en ti.\n\n¿Estás teniendo dificultad para vencer las cosas erróneas de la vida? Deja a Jesús vivir en ti, y te sorprenderás con los resultados...'
+    },
+    {
+      type: 'question',
+      id: 't6-q6',
+      text: '6. ¿Qué hacer si tú sabes que tienes que buscar a Jesús, y no tienes voluntad de hacerlo?',
+      bibleRef: 'Filipenses 2:13'
+    },
+    {
+      type: 'callout',
+      title: 'PIDE A DIOS QUE TU AYUDE',
+      text: 'Tú solo = Voluntad pecaminosa = DERROTA\nTú con Cristo = Voluntad santificada = VICTORIA'
+    },
+    {
+      type: 'list',
+      ordered: false,
+      items: [
+        '**NO TE OLVIDES:**',
+        '• Ora cada instante: andando, comprando, viajando, trabajando... ¡Vive en espíritu de oración!',
+        '• Estudia tu Biblia y medita en ella cada día.',
+        '• Cuenta a otros lo que Jesús hizo por ti.',
+        '• Asiste a una iglesia y participa de sus actividades.',
+        '• Invita a tu casa a tus amigos, vecinos y parientes, para estudiar la Biblia juntos.'
+      ]
+    },
+    {
+      type: 'decision',
+      id: 't6-d1',
+      text: '¿Quieres entregar hoy tu voluntad a Jesús?',
+      checkboxLabel: 'ACEPTO'
+    }
+  ]
+}
+
+export default tema6

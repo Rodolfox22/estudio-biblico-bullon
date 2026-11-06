@@ -1,0 +1,128 @@
+const tema9 = {
+  id: 'tema-9',
+  title: 'Tema 9: ¿Qué hacer para que la experiencia cristiana permanezca siempre viva?',
+  image: 'img/tema-9.svg',
+  keywords: ['experiencia cristiana', 'testificación', 'compañerismo', 'Jesús', 'servicio'],
+
+  blocks: [
+    {
+      type: 'text',
+      style: 'lead',
+      content: 'Existen tres maneras de cultivar el compañerismo con Jesús:\na) El estudio de la Biblia\nb) La Oración\nc) La Testificación'
+    },
+    {
+      type: 'section',
+      title: 'VAMOS A HABLAR HOY DE LA TESTIFICACIÓN'
+    },
+    {
+      type: 'question',
+      id: 't9-q1',
+      text: '1. ¿Cuál fue el método que Jesús usó para distribuir el pan en la multiplicación milagrosa de los panes y los peces?',
+      bibleRef: 'Mateo 14:19'
+    },
+    {
+      type: 'callout',
+      title: 'JESÚS ---> Discípulos ---> Multitud',
+      text: 'Método de distribución'
+    },
+    {
+      type: 'question',
+      id: 't9-q2',
+      text: '2. ¿Qué hizo la samaritana cuando se sintió salvada y perdonada después de su encuentro con Jesús?',
+      bibleRef: 'Juan 4:28,29'
+    },
+    {
+      type: 'question',
+      id: 't9-q3',
+      text: '3. ¿Qué le dijo Jesús al endemoniado gadareno, después de su liberación?',
+      bibleRef: 'Lucas 8:38,39'
+    },
+    {
+      type: 'list',
+      ordered: false,
+      items: [
+        '**OBSERVA QUE...**',
+        'a) Los discípulos reciben el pan de Jesús y van a la multitud para compartir el pan con ella.',
+        'b) La samaritana encuentra el perdón en Cristo y hasta olvida su cántaro para compartir la nueva con sus vecinos.',
+        'c) El gadareno encuentra la liberación en Jesús y vuelve para contar la buena noticia a sus familias.'
+      ]
+    },
+    {
+      type: 'text',
+      content: '¿Por qué? Simplemente, porque la única manera de conservar viva la experiencia de comunión con Cristo, es contar a otros lo que Jesús hizo por nosotros.'
+    },
+    {
+      type: 'text',
+      style: 'quote',
+      content: '"El cristiano que no ejercita las facultades que Dios le ha dado, no sólo dejará de crecer en Cristo, sino que perderá la fuerza que tenía"',
+      cite: 'MIRA ESTA DECLARACIÓN (El camino a Cristo, página 80)'
+    },
+    {
+      type: 'text',
+      style: 'quote',
+      content: '"El esfuerzo por hacer bien a otros se tornará en bendiciones para noso tros mismos. Este fue el designio de Dios al darnos una parte que hacer en el plan de la redención"',
+      cite: 'Y ESTA OTRA (El camino a Cristo, página 78)'
+    },
+    {
+      type: 'section',
+      title: '¿CÓMO TESTIFICAR?'
+    },
+    {
+      type: 'list',
+      ordered: true,
+      items: [
+        'Juan 1:40,41 - Cuenta a tus amigos, parientes, vecinos y colegas de trabajo, cómo era tu vida y cómo cambió cuando conociste a Jesús.',
+        'Lleva algún alimento a una persona anciana.',
+        'Visita personas enlutasas para confortarlas.',
+        'Llama por teléfono a los miembros desanimados de la iglesia.',
+        'Invita a los nuevos conversos a ver la puesta de sol en tu casa.',
+        'Lleva un pan casero a tu vecino.',
+        'Recuerda las fechas especiales de vecinos, amigos y colegas.',
+        'Ora por ellos.',
+        'Ten siempre un folleto de contacto para entregar.'
+      ]
+    },
+    {
+      type: 'section',
+      title: 'TESTIFICANDO EN EL HOGAR'
+    },
+    {
+      type: 'list',
+      ordered: false,
+      items: [
+        'a) Vive normalmente tu vida familiar.',
+        'b) Ora diariamente por los miembros de tu familia.',
+        'c) Sé sincero, honesto, veraz y admite tus errores cuando te equivoques.',
+        'd) Acepta que a veces ellos te contradirán.',
+        'e) Evita forzar, discutir y presionar.',
+        'f) Ámalos y sé cortés con todos. Las oportunidades aparecerán naturalmente.'
+      ]
+    },
+    {
+      type: 'section',
+      title: 'TESTIFICANDO EN PEQUEÑOS GRUPOS'
+    },
+    {
+      type: 'list',
+      ordered: true,
+      items: [
+        'Reúne a tus amigos en casa para estudiar la Biblia y orar.',
+        'Invita a tus vecinos, parientes y colegas de trabajo.',
+        'Sigue esta serie de estudios. Consigue copia para cada amigo y estudien todos juntos.'
+      ]
+    },
+    {
+      type: 'callout',
+      title: 'PROMESA',
+      text: 'A medida que des testimonio, verás que muchos de los problemas de la vida, que parecían grandes, desaparecerán.'
+    },
+    {
+      type: 'decision',
+      id: 't9-d1',
+      text: '¿Testificarás?',
+      checkboxLabel: 'ACEPTO'
+    }
+  ]
+}
+
+export default tema9
