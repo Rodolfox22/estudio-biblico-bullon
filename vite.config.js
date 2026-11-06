@@ -15,6 +15,8 @@ export default defineConfig({
       manifest: {
         name: 'Estudio Bíblico',
         short_name: 'Biblia',
+        start_url: '/estudio-biblico-bullon/',
+        scope: '/estudio-biblico-bullon/',
         description: 'Estudio bíblico interactivo con lecciones, versículos y comandos de voz.',
         lang: 'es',
         theme_color: '#1e4fa3',

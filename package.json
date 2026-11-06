@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "cross-env BASE_PATH=/estudio-biblico/ vite build && gh-pages -d dist"
+    "deploy": "cross-env BASE_PATH=/estudio-biblico-bullon/ vite build && gh-pages -d dist"
   },
   "dependencies": {
     "@fontsource/lora": "^5.1.0",
