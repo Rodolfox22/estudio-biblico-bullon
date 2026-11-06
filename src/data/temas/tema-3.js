@@ -1,38 +1,154 @@
-// Lección 3. Para editarla, cambia solo este archivo.
-// `image`: ruta en public/img/ o URL (p. ej. Unsplash). `keywords` alimenta el buscador de la portada.
-
+// PLANTILLA DE LECCIÓN POR BLOQUES - TEMA 3
 const tema3 = {
   id: 'tema-3',
-  title: 'Tema 3: La salvación en Cristo',
+  title: 'Tema 3: Podemos comenzar todo de nuevo',
   image: 'img/tema-3.svg',
-  keywords: ['salvación', 'Jesús', 'cruz', 'gracia', 'fe', 'redención', 'vida eterna'],
-  sections: [
+  keywords: ['conversión', 'pecado', 'obras de la carne', 'frutos del Espíritu', 'Dios'],
+
+  blocks: [
     {
-      title: 'Jesús vino a buscarte',
-      questions: [
-        { id: 't3-s1-q1', text: '¿A qué vino Jesús al mundo?', bibleRef: 'Lucas 19:10' },
-        { id: 't3-s1-q2', text: '¿Con qué propósito envió Dios a su Hijo?', bibleRef: 'Juan 3:16-17' }
+      type: 'text',
+      style: 'lead',
+      content: 'Hoy hablaremos de la CONVERSIÓN, pero para entender qué es conversión, en primer lugar es necesario comprender la tragedia del ser humano.'
+    },
+    {
+      type: 'verses',
+      refs: ['Efesios 2:3', 'Romanos 3:10', 'Salmos 58:3', 'Isaías 1:6']
+    },
+    {
+      type: 'list',
+      ordered: false,
+      items: [
+        '**Observa que:**',
+        'Todos nacemos pecadores.',
+        'Por ser pecadores, nacemos separados de Dios.',
+        'La naturaleza egoísta sólo desea cosas malas.',
+        'Ser pecador es vivir en los deseos de la carne.'
       ]
     },
     {
-      title: 'La salvación es un regalo',
-      questions: [
-        { id: 't3-s2-q1', text: '¿Por qué somos salvos: por lo que hacemos o por la gracia de Dios?', bibleRef: 'Efesios 2:8-9' },
-        { id: 't3-s2-q2', text: '¿En quién se encuentra la salvación?', bibleRef: 'Hechos 4:12' }
+      type: 'callout',
+      title: 'HOMBRE (pecador)',
+      text: 'Mata, roba, miente, adultera, etc.'
+    },
+    {
+      type: 'callout',
+      title: 'Pecado',
+      text: 'Separación de Dios'
+    },
+    {
+      type: 'callout',
+      title: 'DIOS',
+      text: 'Es santo'
+    },
+    {
+      type: 'question',
+      id: 't3-q1',
+      text: 'Básicamente, ¿Qué es pecado?',
+      bibleRef: '1 Juan 3:4'
+    },
+    {
+      type: 'text',
+      content: 'Pecado es también transgresión de la ley, pero antes de eso es vivir separado de Dios.'
+    },
+    {
+      type: 'verses',
+      refs: ['Gálatas 5:19-23']
+    },
+    {
+      type: 'text',
+      style: 'lead',
+      content: '**OBSERVA:**'
+    },
+    {
+      type: 'text',
+      content: [
+        '**Obras de la carne:** Prostitución, impureza, lascivia, idolatría, hechicería, enemistad, contiendas, crimen, ira, disensiones, partidos, envidias, borracheras, orgías y cosas semejantes.',
+        '**Frutos del Espíritu:** Amor, gozo, paz, longanimidad, benignidad, bondad, fidelidad, mansedumbre, etc.'
+      ]
+    },
+{
+      type: 'section',
+      title: 'Percibe que:'
+    },
+    {
+      type: 'text',
+      style: 'quote',
+      content: [
+        'Las obras de la carne son frutos, resultado o consecuencia de vivir en el pecado.',
+        ' El ser humano no es pecador porque mata. Él mata porque es pecador. Si no fuese pecador, no mataría.',
+        'El problema del hombre no sólo es robar, matar o adulterar. Eso es el fruto de su problema. Su verdadero problema es ser un pecador, es decir, **vivir apartado de Dios.**']
+      
+    },
+
+    {
+      type: 'verses',
+      refs: ['Marcos 10:17-22', 'Juan 3:1-6']
+    },
+    {
+      type: 'question',
+      id: 't3-q2',
+      text: '¿Puede alguien estar separado de Dios y a pesar de eso vivir una vida de aparente obediencia?'
+    },
+    {
+      type: 'question',
+      id: 't3-q3',
+      text: '¿Puede alguien sólo, mudar su conducta automáticamente?',
+      bibleRef: 'Jeremías 13:23'
+    },
+    {
+      type: 'text',
+      style: 'quote',
+      content:'Obediencia, Filosofia, Buenas obras, Moralismo'
+    },    
+    {
+      type: 'text',
+      content:'¿Nos conducen a Dios?'
+    },
+    {
+      type: 'text',
+      style: 'quote',
+      content:'"Es imposible que escapemos nosotros mismos del hoyo del pecado en el que estamos sumidos. Nuestro corazón es malo, y no lo podemos cambiar."',
+      cite:'El Camino a Cristo, página 18'
+    },
+    {
+      type: 'question',
+      id: 't3-q4',
+      text: '¿Qué promesa maravillosa presenta la Biblia?',
+      bibleRef: '2 Pedro 1:4'
+    },
+    {
+      type: 'banner',
+      text: ['Quiere decir que nacemos con la naturaleza pecaminosa, pero podemos volvernos participantes de la naturaleza divina.',
+        'HOMBRE', 'CRISTO', 'DIOS',
+      '"Todo aquel que cree que Jesús es el Cristo, es nacido de Dios" (1 Juan 5:1)'
       ]
     },
     {
-      title: 'Vivir con la certeza de la salvación',
-      questions: [
-        { id: 't3-s3-q1', text: '¿Qué puede saber con seguridad quien tiene al Hijo de Dios?', bibleRef: '1 Juan 5:11-13' }
-      ]
+type: 'question',
+      id: 't3-q5',
+      text: '¿Qué sucede después de la conversión?',
+      bibleRef: '2 Corintios 5:17'
+    },
+    {
+      type: 'text',
+      style: 'lead',
+      content: 'Resumiendo'
+    },
+    {
+      type: 'text',
+      style: 'quote',
+      content: [
+        'Todos nacemos pecadores y nos gusta vivir lejos de Dios haciendo cosas erróneas.',
+        ' Nadie puede cambiar su conducta auténticamente por sus propios esfuerzos.',
+        'La única solución es Cristo. Él puede convertirnos en buenas criaturas, con nuevos sentimientos, impulsos y acciones']
+    },
+    {
+      type: 'decision',
+      text: '¿Te gustaría ser una nueva criatura en Cristo y comenzar todo de nuevo?',
+      checkboxLabel: 'ACEPTO'
     }
-  ],
-  versesSection: ['Isaías 53:5', 'Juan 14:6', 'Romanos 10:9-10', 'Tito 3:5', 'Filipenses 1:6'],
-  decision: {
-    text: 'Jesús tocó a la puerta de tu corazón. ¿Quieres aceptarlo hoy como tu Salvador?',
-    checkboxLabel: 'Sí, quiero aceptar a Jesús como mi Salvador'
-  }
+  ]
 }
 
 export default tema3
