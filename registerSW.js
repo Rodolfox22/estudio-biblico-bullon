@@ -1,1 +1,1 @@
-if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/estudio-biblico/sw.js', { scope: '/estudio-biblico/' })})}
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/estudio-biblico-bullon/sw.js', { scope: '/estudio-biblico-bullon/' })})}
