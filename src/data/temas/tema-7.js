@@ -13,13 +13,13 @@ const tema7 = {
     {
       type: 'question',
       id: 't7-q1',
-      text: '1. En el Jardín del Edén ¿Cómo se comunicaba Dios con sus Hijos?',
+      text: 'En el Jardín del Edén ¿Cómo se comunicaba Dios con sus Hijos?',
       bibleRef: 'Génesis 2:15,16'
     },
     {
       type: 'question',
       id: 't7-q2',
-      text: '2. Tú vez que ellos hablaban cara a cara. ¿Cuándo fue entonces que el hombre comenzó a esconderse de Dios?',
+      text: 'Tú vez que ellos hablaban cara a cara. ¿Cuándo fue entonces que el hombre comenzó a esconderse de Dios?',
       bibleRef: 'Génesis 3:9,10'
     },
     {
@@ -28,13 +28,19 @@ const tema7 = {
     },
     {
       type: 'text',
-      style: 'quote',
-      content: '"Y dijeron a Moisés, habla tú con nosotros y nosotros oiremos; pero no hable Dios para que no muramos"',
-      cite: 'MIRA ESTO (Éxodo 20:19)'
+      style: 'lead',
+      content: 'MIRA ESTO:',
     },
     {
       type: 'text',
-      content: 'Pero Dios no pudo guardar silencio. Él nos creó para vivir con nosotros una vida de comunión permanente.\n¿Qué podía hacer Dios para continuar comunicándose con sus hijos?'
+      style: 'quote',
+      content: '"Y dijeron a Moisés, habla tú con nosotros y nosotros oiremos; pero no hable Dios para que no muramos"',
+      cite: '(Éxodo 20:19)'
+    },
+    {
+      type: 'text',
+      content: ['Pero Dios no pudo guardar silencio. Él nos creó para vivir con nosotros una vida de comunión permanente.',
+        '¿Qué podía hacer Dios para continuar comunicándose con sus hijos?']
     },
     {
       type: 'callout',
@@ -44,19 +50,19 @@ const tema7 = {
     {
       type: 'question',
       id: 't7-q3',
-      text: '3. Después de que el hombre tuvo miedo hasta de oír su voz, ¿cómo fue que Dios pasó a comunicarse con sus hijos?',
+      text: 'Después de que el hombre tuvo miedo hasta de oír su voz, ¿cómo fue que Dios pasó a comunicarse con sus hijos?',
       bibleRef: 'Hebreos 1:1'
     },
     {
       type: 'question',
       id: 't7-q4',
-      text: '4. ¿A través de quien Dios inspiró su mensaje a los autores bíblicos?',
+      text: '¿A través de quien Dios inspiró su mensaje a los autores bíblicos?',
       bibleRef: '2 Pedro 1:21'
     },
     {
       type: 'question',
       id: 't7-q5',
-      text: '5. ¿Cuánto de la Biblia fue inspirado por Dios?',
+      text: '¿Cuánto de la Biblia fue inspirado por Dios?',
       bibleRef: '2 Timoteo 3:16'
     },
     {
@@ -64,14 +70,40 @@ const tema7 = {
       title: 'PROPÓSITOS'
     },
     {
-      type: 'list',
-      ordered: false,
-      items: [
-        '• **Salmos 119:105:** Ilumina tu camino.',
-        '• **Romanos 15:4:** Te enseña y te da esperanza.',
-        '• **Juan 17:17:** Te revela la verdad.',
-        '• **Juan 5:39:** Testifica para ti de Jesús y te guía a la vida eterna.'
-      ]
+        type: 'verses',
+        refs: ['Salmos 119:105'],
+    },
+    {
+      type: 'text',
+      style: 'lead',
+      content: 'Ilumina tu camino',
+    },
+    {
+        type: 'verses',
+        refs: ['Romanos 15:4'],
+    },
+    {
+      type: 'text',
+      style: 'lead',
+      content: 'Te enseña y te da esperanza',
+    },
+    {
+        type: 'verses',
+        refs: ['Juan 17:17'],
+    },
+    {
+      type: 'text',
+      style: 'lead',
+      content: 'Te revela la verdad',
+    },
+    {
+        type: 'verses',
+        refs: ['Juan 5:39'],
+    },
+    {
+      type: 'text',
+      style: 'lead',
+      content: 'Testifica para ti de Jesús y te guía a la vida eterna',
     },
     {
       type: 'callout',
@@ -92,10 +124,13 @@ const tema7 = {
       title: '¿CÓMO LEER LA BIBLIA?'
     },
     {
+        type: 'verses',
+        refs: ['Salmos 119:18'],
+    },{
       type: 'list',
       ordered: true,
       items: [
-        'Salmos 119:18 - Deseando que Dios te hable al corazón.',
+        'Deseando que Dios te hable al corazón.',
         'HACIENDO PREGUNTAS:\n  • ¿Qué quiere Dios de mí, en este día?\n  • ¿Cómo puede ayudarme este pasaje a resolver mis problemas hoy?\n  • ¿Hay aquí algo que debo obedecer?\n  • ¿Cómo pueden aplicarse estas verdades a mi vida?',
         'LEE EL MISMO PASAJE VARIAS VECES HASTA ENTENDERLO.',
         'LEE MEDITANDO. Es mejor un pasaje corto comprendido y aplicado, que un texto largo leído superficialmente.',

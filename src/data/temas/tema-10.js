@@ -8,7 +8,16 @@ const tema10 = {
     {
       type: 'text',
       style: 'lead',
-      content: 'Antes de comenzar el estudio de hoy, responde:\n¿Puede alguien hacer caber en un vaso, todo el agua del mar?\n\n**NO**\n\nENTONCES,\n¿Cómo podremos entender con nuestra mente finita la naturaleza de Dios?\nCon todo, veamos lo que la Biblia nos dice acerca de la divinidad.'
+      content: 'Antes de comenzar el estudio de hoy, responde:'
+    },
+    {
+      type: 'text',
+      style: 'lead',
+      content: ['¿Puede alguien hacer caber en un vaso, todo el agua del mar?',
+        '**NO**',
+        'ENTONCES,',
+        '¿Cómo podremos entender con nuestra mente finita la naturaleza de Dios?',
+        'Con todo, veamos lo que la Biblia nos dice acerca de la divinidad.']
     },
     {
       type: 'section',
@@ -17,13 +26,13 @@ const tema10 = {
     {
       type: 'question',
       id: 't10-q1',
-      text: '1. ¿Qué dice Moisés respecto a eso?',
+      text: '¿Qué dice Moisés respecto a eso?',
       bibleRef: 'Deuteronomio 6:4'
     },
     {
       type: 'question',
       id: 't10-q2',
-      text: '2. ¿Existe algún otro Dios, además de Él?',
+      text: '¿Existe algún otro Dios, además de Él?',
       bibleRef: 'Deuteronomio 4:35'
     },
     {
@@ -33,13 +42,13 @@ const tema10 = {
     {
       type: 'question',
       id: 't10-q3',
-      text: '3. ¿Qué dice Jesús de su relación con el Padre?',
+      text: '¿Qué dice Jesús de su relación con el Padre?',
       bibleRef: 'Juan 10:30'
     },
     {
       type: 'question',
       id: 't10-q4',
-      text: '4. ¿Cómo lo confirma Juan?',
+      text: '¿Cómo lo confirma Juan?',
       bibleRef: 'Juan 1:1'
     },
     {
@@ -49,13 +58,13 @@ const tema10 = {
     {
       type: 'question',
       id: 't10-q5',
-      text: '5. Cuando Ananías y Safira mintieron al Espíritu Santo, ¿a quién en realidad estaban mintiendo?',
+      text: 'Cuando Ananías y Safira mintieron al Espíritu Santo, ¿a quién en realidad estaban mintiendo?',
       bibleRef: 'Hechos 5:3-5'
     },
     {
       type: 'question',
       id: 't10-q6',
-      text: '6. Cuando Dios tocó a Ezequiel, ¿quién lo estaba tocando en realidad?',
+      text: 'Cuando Dios tocó a Ezequiel, ¿quién lo estaba tocando en realidad?',
       bibleRef: 'Ezequiel 8:1,3'
     },
     {
@@ -70,7 +79,7 @@ const tema10 = {
     {
       type: 'question',
       id: 't10-q7',
-      text: '7. De acuerdo con los pasajes que aparecen a continuación, ¿quién fue el Creador?',
+      text: 'De acuerdo con los pasajes que aparecen a continuación, ¿quién fue el Creador?',
       bibleRefs: ['Génesis 1:1', '1 Corintios 8:6', 'Job 33:4']
     },
     {
@@ -84,13 +93,13 @@ const tema10 = {
     {
       type: 'question',
       id: 't10-q8',
-      text: '8. ¿Quién te amo a ti, y dio a su hijo para morir en tu lugar?',
+      text: '¿Quién te amo a ti, y dio a su hijo para morir en tu lugar?',
       bibleRef: 'Juan 3:16'
     },
     {
       type: 'question',
       id: 't10-q9',
-      text: '9. ¿Quién murió por ti?',
+      text: '¿Quién murió por ti?',
       bibleRef: 'Romanos 5:8'
     },
     {
@@ -111,19 +120,19 @@ const tema10 = {
     {
       type: 'question',
       id: 't10-q11',
-      text: '11. La única persona de la Divinidad que se hizo hombre y tomó la forma humana es JESÚS.',
+      text: 'La única persona de la Divinidad que se hizo hombre y tomó la forma humana es JESÚS.',
       bibleRef: 'Juan 3:16'
     },
     {
       type: 'question',
       id: 't10-q12',
-      text: '12. Jesús permanece en los cielos con su cuerpo humano.',
+      text: 'Jesús permanece en los cielos con su cuerpo humano.',
       bibleRef: '1 Timoteo 2:5'
     },
     {
       type: 'question',
       id: 't10-q13',
-      text: '13. Jesús envió a su Representante para acompañarnos hoy.',
+      text: 'Jesús envió a su Representante para acompañarnos hoy.',
       bibleRef: 'Juan 16:7'
     },
     {

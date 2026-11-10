@@ -8,7 +8,22 @@ const tema9 = {
     {
       type: 'text',
       style: 'lead',
-      content: 'Existen tres maneras de cultivar el compañerismo con Jesús:\na) El estudio de la Biblia\nb) La Oración\nc) La Testificación'
+      content: 'Existen tres maneras de cultivar el compañerismo con Jesús:'
+    },
+    {
+      type: 'text',
+      style: 'lead',
+      content: 'a) El estudio de la Biblia'
+    },
+    {
+      type: 'text',
+      style: 'lead',
+      content: 'b) La Oración'
+    },
+    {
+      type: 'text',
+      style: 'lead',
+      content: 'c) La Testificación'
     },
     {
       type: 'section',
@@ -17,24 +32,24 @@ const tema9 = {
     {
       type: 'question',
       id: 't9-q1',
-      text: '1. ¿Cuál fue el método que Jesús usó para distribuir el pan en la multiplicación milagrosa de los panes y los peces?',
+      text: '¿Cuál fue el método que Jesús usó para distribuir el pan en la multiplicación milagrosa de los panes y los peces?',
       bibleRef: 'Mateo 14:19'
     },
     {
       type: 'callout',
-      title: 'JESÚS ---> Discípulos ---> Multitud',
-      text: 'Método de distribución'
+      text: 'JESÚS ---> Discípulos ---> Multitud',
+      title: 'Método de distribución'
     },
     {
       type: 'question',
       id: 't9-q2',
-      text: '2. ¿Qué hizo la samaritana cuando se sintió salvada y perdonada después de su encuentro con Jesús?',
+      text: '¿Qué hizo la samaritana cuando se sintió salvada y perdonada después de su encuentro con Jesús?',
       bibleRef: 'Juan 4:28,29'
     },
     {
       type: 'question',
       id: 't9-q3',
-      text: '3. ¿Qué le dijo Jesús al endemoniado gadareno, después de su liberación?',
+      text: '¿Qué le dijo Jesús al endemoniado gadareno, después de su liberación?',
       bibleRef: 'Lucas 8:38,39'
     },
     {
@@ -52,26 +67,38 @@ const tema9 = {
       content: '¿Por qué? Simplemente, porque la única manera de conservar viva la experiencia de comunión con Cristo, es contar a otros lo que Jesús hizo por nosotros.'
     },
     {
+      type: 'section',
+      title: 'Mira esta declaración:'
+    },
+    {
       type: 'text',
       style: 'quote',
       content: '"El cristiano que no ejercita las facultades que Dios le ha dado, no sólo dejará de crecer en Cristo, sino que perderá la fuerza que tenía"',
-      cite: 'MIRA ESTA DECLARACIÓN (El camino a Cristo, página 80)'
+      cite: '(El camino a Cristo, página 80)'
+    },
+    {
+      type: 'section',
+      title: 'Y esta otra:'
     },
     {
       type: 'text',
       style: 'quote',
       content: '"El esfuerzo por hacer bien a otros se tornará en bendiciones para noso tros mismos. Este fue el designio de Dios al darnos una parte que hacer en el plan de la redención"',
-      cite: 'Y ESTA OTRA (El camino a Cristo, página 78)'
+      cite: '(El camino a Cristo, página 78)'
     },
     {
       type: 'section',
       title: '¿CÓMO TESTIFICAR?'
     },
     {
+      type: 'verses',
+      refs: ['Juan 1:40,41']
+    },
+    {
       type: 'list',
       ordered: true,
       items: [
-        'Juan 1:40,41 - Cuenta a tus amigos, parientes, vecinos y colegas de trabajo, cómo era tu vida y cómo cambió cuando conociste a Jesús.',
+        'Cuenta a tus amigos, parientes, vecinos y colegas de trabajo, cómo era tu vida y cómo cambió cuando conociste a Jesús.',
         'Lleva algún alimento a una persona anciana.',
         'Visita personas enlutasas para confortarlas.',
         'Llama por teléfono a los miembros desanimados de la iglesia.',

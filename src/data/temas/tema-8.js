@@ -15,15 +15,49 @@ const tema8 = {
       title: '¿CÓMO ORAR?'
     },
     {
-      type: 'list',
-      ordered: false,
-      items: [
-        '**Mateo 6:6** - Ora directamente al Padre, sin intermediarios',
-        '**Juan 14:13, 14; Juan 14:6** - Ora en nombre de Jesús',
-        '**1 Tes. 5:18** - Ora agradeciendo al Padre por las bendiciones recibidas.',
-        '**Marcos 11:24** - Ora esperando recibir la respuesta.',
-        '**Mateo 6:5** - AL ORAR di lo que estás sintiendo, sin hipocresías.'
-      ]
+        type: 'verses',
+        refs: ['Mateo 6:6'],
+    },
+    {
+      type: 'text',
+      style: 'lead',
+      content: 'Ora directamente al Padre, sin intermediarios.',
+    },
+    {
+        type: 'verses',
+        refs: ['Juan 14:13, 14', 'Juan 14:6'],
+    },
+    {
+      type: 'text',
+      style: 'lead',
+      content: 'Ora en nombre de Jesús.',
+    },
+    {
+        type: 'verses',
+        refs: ['1 Tes. 5:18'],
+    },
+    {
+      type: 'text',
+      style: 'lead',
+      content: 'Ora agradeciendo al Padre por las bendiciones recibidas.',
+    },
+    {
+        type: 'verses',
+        refs: ['Marcos 11:24'],
+    },
+    {
+      type: 'text',
+      style: 'lead',
+      content: 'Ora esperando recibir la respuesta.',
+    },
+    {
+        type: 'verses',
+        refs: ['Mateo 6:5'],
+    },
+    {
+      type: 'text',
+      style: 'lead',
+      content: 'Al orar di lo que estás sintiendo, sin hipocresías.',
     },
     {
       type: 'callout',
@@ -33,13 +67,21 @@ const tema8 = {
     {
       type: 'text',
       style: 'quote',
-      content: '"Orar es abrir el corazón a Dios como a un AMIGO".',
-      cite: 'AL FIN'
+      content: '"Orar es abrir el corazón a Dios como a un AMIGO".'
     },
     {
       type: 'text',
       style: 'lead',
-      content: 'RESPONDE:\n• ¿Los amigos hablan siempre de la misma cosa?\n• ¿Los amigos sólo hablan para pedir favores?\n• ¿Los amigos conversan por obligación?'
+      content: 'RESPONDE:'
+    },
+    {
+      type: 'list',
+      ordered: false,
+      items: [
+        '¿Los amigos hablan siempre de la misma cosa?',
+        '¿Los amigos sólo hablan para pedir favores?',
+        '¿Los amigos conversan por obligación?'
+      ]
     },
     {
       type: 'callout',
@@ -51,16 +93,31 @@ const tema8 = {
       title: '¿QUÉ HACER?'
     },
     {
-      type: 'list',
-      ordered: false,
-      items: [
-        '**Cuando no tienes voluntad de orar:**\nCuenta a Dios precisamente eso. Pregúntale por qué te estás sintiendo así. Verás que sin darte cuenta comenzarás a conversar.',
-        '**Cuando en medio de la oracion tienes un pensamiento impuro:**\nNo huyas del pensamiento. Inclúyelo en la oración. Cuéntale a Dios lo que vino a tu mente.'
+      type: 'callout',
+      title: 'Cuando no tienes voluntad de orar:',
+      text: [
+        'Cuenta a Dios precisamente eso. Pregúntale por qué te estás sintiendo así. Verás que sin darte cuenta comenzarás a conversar.',
       ]
     },
     {
-      type: 'text',
-      content: 'Cuando sientes que tu oración no pasa del techo:\nEso sucede porque tú tienes una idea distante de Dios. Imagina que está a tu lado, y todo cambiará.\n\nCuando tu oración se termina en dos minutos:\nEso pasa porque tú sólo estás pidiendo cosas. Conversa con Él. Cuéntale todo lo que has hecho en el día, y verás que todo cambia.'
+      type: 'callout',
+      title: 'Cuando en medio de la oracion tienes un pensamiento impuro:',
+      text: [
+        'No huyas del pensamiento. Inclúyelo en la oración. Cuéntale a Dios lo que vino a tu mente.'
+      ]
+    },
+    {
+      type: 'callout',
+      title: 'Cuando sientes que tu oración no pasa del techo:',
+      text: [ 'Eso sucede porque tú tienes una idea distante de Dios. Imagina que está a tu lado, y todo cambiará.'
+      ]
+    },
+    {
+      type: 'callout',
+      title: 'Cuando tu oración se termina en dos minutos:',
+      text: [  
+        'Eso pasa porque tú sólo estás pidiendo cosas. Conversa con Él. Cuéntale todo lo que has hecho en el día, y verás que todo cambia.'
+      ]
     },
     {
       type: 'section',
@@ -76,10 +133,14 @@ const tema8 = {
       ]
     },
     {
+      type: 'section',
+      title: 'MEDITA EN ESTO '
+    },
+    {
       type: 'text',
       style: 'quote',
       content: '"Conságrate a Dios todas las mañanas, haz de esto tu primer trabajo. Sea tu oración: Tómame, ¡Oh, Señor!, como enteramente tuyo. Pongo todos mis planes a tus pies, úsame hoy en tu servicio. Mora conmigo y sea toda mi obra hecha en ti. Este es un asunto diario. Cada mañana conságrate a Dios por este día. Somete todos tus planes a él, para ponerlos en práctica o abandonarlos según te lo indicare su providencia. Sea puesta así tu vida en las manos de Dios, y será así cada vez más semejante a la de Cristo."',
-      cite: 'MEDITA EN ESTO (El Camino a Cristo, página 70)'
+      cite: '(El Camino a Cristo, página 70)'
     },
     {
       type: 'decision',
